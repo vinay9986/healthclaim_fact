@@ -4,7 +4,7 @@ Bert model trained on PubMed articles by microsoft. Pretrained model weights can
 ## Dataset
 [PUBHEALTH](https://huggingface.co/datasets/health_fact#dataset-card-for-pubhealth): Explainable automated fact-checking of public health claims.
 
-## Analysis:
+## Analysis
 ### Stage 1: Establishing the baseline.
 * Fine tune the bert model to the *claim* feature of the pubhealth dataset. The baseline accuracy is **0.6502** with f-score **0.6072**
 * Code in notebook **healthcare_claims_baseline.ipynb**
@@ -38,3 +38,4 @@ Pairwise learning of *claim* and *explanation* features with custom head over Be
 ## Further work
 * Try different representations of the hidden layer embeddings with *claim* and *explanation* pair
 * Try machine learning models over embeddings explored in the previous step
+* Try different models from transformers
