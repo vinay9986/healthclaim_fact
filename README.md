@@ -1,3 +1,8 @@
+## About
+This repository contains code that establishes the baseline for classification of healt claim facts.
+
+***The best baseline achived has accuray of 0.7263 with 0.7088 f-score***
+
 ## Model
 Bert model trained on PubMed articles by microsoft. Pretrained model weights can be downloaded from [here](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext).
 
@@ -36,6 +41,7 @@ Pairwise learning of *claim* and *explanation* features with custom head over Be
 * Code in notebook **healthcare-claims-with-explanation-custom-head.ipynb**
 
 ## Further work
+* Understand the base model and embeddings using [LIT](https://pair-code.github.io/lit/) and Tensor board
 * Try different representations of the hidden layer embeddings with *claim* and *explanation* pair
 * Try machine learning models over embeddings explored in the previous step
 * Try different models from transformers
